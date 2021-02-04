@@ -43,7 +43,7 @@ function showDate() {
 		"Sun"];
 
 
-	let content = ` ${DAYS[d.getDay()]}  ${d.getDate()} / ${MON[d.getMonth()]} / ${d.getFullYear()} `;
+	let content = ` ${DAYS[d.getDay()-1]}  ${d.getDate()} / ${MON[d.getMonth()]} / ${d.getFullYear()} `;
 
 	return content;
 }

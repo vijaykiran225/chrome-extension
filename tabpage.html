@@ -2,17 +2,11 @@
 <html lang="en" dir="ltr">
 
 <head>
-	<meta charset="utf-8" />
 	<title>Vijay's New Tab</title>
-	<script type="text/javascript" src="tab.js" defer></script>
+	<!-- <script type=" text/javascript" src="hist.js" defer> </script> -->
+	<script type="text/javascript" src="tab.js" defer> </script>
+
 	<style>
-		body {
-			background-image: url("assets/av.jpg");
-			background-repeat: no-repeat;
-			background-size: 100%;
-
-		}
-
 		#welcome_msg {
 			font-size: 40pt;
 			font-weight: bold;
@@ -42,6 +36,20 @@
 	<div id="date_msg"></div>
 
 	<div id="welcome_msg"></div>
+
+	<input type="text" id="ip" value="qu" style="width:98%;height:25px;padding-left:15px;" />
+	<button style="margin-top:15px;margin-bottom:15px" id="fillData">Search</button>
+	<div style="margin-bottom:15px">
+		<span style="padding-right:15px">History count</span>
+		<span id="history_search_result_count">0</span>
+	</div>
+	<div>
+		<span style="padding-right:15px">Bookmarks count</span>
+		<span id="bookmarks_search_result_count">0</span>
+	</div>
+
+	<div id="bookmarks_search_result"></div>
+	<div id="history_search_result"></div>
 
 </body>
 
